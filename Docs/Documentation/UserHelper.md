@@ -6,12 +6,13 @@ The User Helper has some methods that may be needed if you want to improve your 
 Setup
 ---------------
 
-Enable the Helper in `src/view/AppView.php`:
+Enable the Helper in `src/View/AppView.php`:
 ```php
 class AppView extends View
 {
     public function initialize()
     {
+        /* Only the two lines below need to be added */
         parent::initialize();
         $this->loadHelper('CakeDC/Users.User');
     }
